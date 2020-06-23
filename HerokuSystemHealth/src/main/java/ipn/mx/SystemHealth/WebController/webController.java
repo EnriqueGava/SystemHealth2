@@ -642,7 +642,7 @@ public class webController {
 		try {
 			connection = dataSource.getConnection();
 
-			java.io.InputStream jasperStream = this.getClass().getResourceAsStream("/reportes/reporteMomito.jasper");
+			java.io.InputStream jasperStream = this.getClass().getResourceAsStream("https://github.com/gdjorgeluis/archivosSH/blob/master/reporteMomito.jasper");
 			Map<String, Object> params = new HashMap<>();
 			params.put("NumRec", n);
 			JasperReport jasperReport = (JasperReport) JRLoader.loadObject(jasperStream);
